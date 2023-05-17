@@ -1,0 +1,33 @@
+
+
+
+type Query{
+listarProductos: [Producto]
+
+}
+type Producto{
+
+      id_producto: Int,
+
+      nombre : String,
+	  stock:String,
+	precio:String,
+	 tipo:String,
+	 fechaPro: String
+
+}
+type Mutation{
+  guardarProducto(producto: ProductoRequest): Producto
+
+}
+input ProductoRequest{
+nombre : String,
+	  stock:String,
+	precio:String,
+	 tipo:String,
+	 fechaPro: String
+}
+
+
+
+
